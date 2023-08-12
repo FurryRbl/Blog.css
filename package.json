@@ -1,0 +1,45 @@
+{
+	"name": "@sharpice/blog.css",
+	"version": "1.0.0",
+	"description": "Personalized CSS styles for blog posts",
+	"license": "MIT",
+	"type": "module",
+	"private": false,
+	"main": "dist/Blog.css",
+	"style": "dist/Blog.css",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"src",
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/FurryRbl/Blog.css.git"
+	},
+	"homepage": "https://github.com/FurryRbl/Blog.css",
+	"bugs": {
+		"url": "https://github.com/FurryRbl/Blog.css/issues"
+	},
+	"author": {
+		"name": "SharpIce",
+		"email": "VupRbl@163.com",
+		"url": "https://SharpIce.top"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"test": "vite test test",
+		"build": "node build.mjs",
+		"prettier": "prettier --write .",
+		"clean": "rimraf dist node_modules/.vite"
+	},
+	"devDependencies": {
+		"clean-css": "^5.3.2",
+		"less": "^4.2.0",
+		"prettier": "^3.0.1",
+		"rimraf": "^5.0.1",
+		"vite": "^4.4.8"
+	}
+}

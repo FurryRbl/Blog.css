@@ -1,0 +1,43 @@
+.blog-content {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		position: relative;
+	}
+
+	h1::after,
+	h2::after,
+	h3::after,
+	h4::after,
+	h5::after,
+	h6::after {
+		.blog-mixins.text.decorated-after();
+	}
+
+	h1::after {
+		background-color: .blog-color-title[ @Purple];
+	}
+
+	h2::after {
+		background-color: .blog-color-title[ @Blue];
+	}
+
+	h3::after {
+		background-color: .blog-color-title[ @Cyan];
+	}
+
+	h4::after {
+		background-color: .blog-color-title[ @Green];
+	}
+
+	h5::after {
+		background-color: .blog-color-title[ @Yellow];
+	}
+
+	h6::after {
+		background-color: .blog-color-title[ @Red];
+	}
+}

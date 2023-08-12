@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh">
+	<head>
+		<title>Blog.css Test</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="module">
+			import "../src/Blog.less";
+		</script>
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				background-color: ghostwhite;
+			}
+			#Main {
+				width: 70%;
+				border: 1px solid gainsboro;
+				border-radius: 13px;
+				background-color: azure;
+			}
+			#Post {
+				margin: 0 auto;
+				width: 90%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<main id="Main">
+			<article id="Post" class="blog-content">
+				<h1>h1</h1>
+				<h2>h2</h2>
+				<h3>h3</h3>
+				<h4>h4</h4>
+				<h5>h5</h5>
+				<h6>h6</h6>
+				<hr />
+				<blockquote cite="https://127.0.0.1">
+					引用自 127.0.0.1
+					<br />
+					<cite>— 127.0.0.1</cite>
+				</blockquote>
+
+				<hr />
+				<p>Text</p>
+			</article>
+		</main>
+	</body>
+</html>

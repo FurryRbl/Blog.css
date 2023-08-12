@@ -1,0 +1,11 @@
+# Loog
+*.log
+
+# Node Modules
+node_modules
+
+# Editer File
+.DS_Store
+
+# Build out directory
+dist
