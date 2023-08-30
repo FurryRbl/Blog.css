@@ -1,0 +1,29 @@
+.blog-content {
+	a {
+		font-weight: bold;
+		position: relative;
+		text-decoration: none;
+		color: .blog-color[ @LightBlack];
+	}
+	a::after {
+		left: 0;
+		top: 100%;
+		content: "";
+		height: 2px;
+		position: absolute;
+		transform: translateY(-50%);
+	}
+	a:hover::after {
+		@keyframes Underline {
+			0% {
+				width: 0%;
+				background-color: .blog-color[ @LightBlack];
+			}
+			100% {
+				width: 100%;
+				background-color: .blog-color[ @Green];
+			}
+		}
+		animation: Underline 0.7s forwards;
+	}
+}
